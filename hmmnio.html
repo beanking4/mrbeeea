@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Table</title>
+    <link rel="stylesheet" href="suiiiiirtys.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .table-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .status-pending {
+           background-color:orange;
+           color: rgb(255, 81, 0);
+           border-radius: 5px;
+           border: none;
+        }
+        .status-done {
+            color: rgb(0, 255, 0);
+            background-color:rgb(40, 88, 0) ;
+            border-radius: 5px;
+            height: 20px;
+            width: 70px;
+            border: none;
+
+        }
+        .status-failed {
+            color: red;
+            background-color:rgb(231, 128, 128) ;
+            border-radius: 5px;
+            height: 20px;
+            width: 70px;
+            border: none;
+        }
+        .details {
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Employee</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Payment Date</th>
+                    <th>Payment Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>Victor Pacheco</td>
+                    <td>Sales</td>
+                    <td>$4,000.00</td>
+                    <td>Yesterday</td>
+                    <td ><button class="status-pending"> Pending </button></td>
+                    <td class="details">Capture payment details</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>Charlotte Spencer</td>
+                    <td>Support</td>
+                    <td>$95,000.00</td>
+                    <td>In 2 days</td>
+                    <td ><button class="status-pending"> Pending </button></td>
+                    <td class="details">No remarks</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>Annette Black</td>
+                    <td>Design</td>
+                    <td>$95,000.00</td>
+                    <td>22/02/2021</td>                                        
+                    <td><button class="status-failed">Failed</button></td>
+                    <td class="details">Please forward this information to...</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>Jerome Bell</td>
+                    <td>Sales</td>
+                    <td>$85,000.00</td>
+                    <td>22/02/2021</td>
+                    <td ><button class="status-done"> done </button></td>
+                    <td class="details">Request confirmation</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>Jenny Wilson</td>
+                    <td>Sales</td>
+                    <td>$34,000.00</td>
+                    <td>22/02/2021</td>
+                    <td ><button class="status-done"> done </button></td>
+                    <td class="details">No remarks</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>Albert Flores</td>
+                    <td>Sales</td>
+                    <td>$95,000.00</td>
+                    <td>22/02/2021</td>
+                    <td ><button class="status-done"> done </button></td>
+                    <td class="details">Received confirmation</td>
+                </tr>
+                <tr>
+           
